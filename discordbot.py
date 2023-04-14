@@ -24,6 +24,9 @@ async def on_message(message):
 
     if message.content.startswith(f'{PREFIX}hello'):
         await message.channel.send('Hello!')
+        
+    if message.content.startswith(f'{PREFIX}ping'):
+        await message.channel.send('pong!')
 
 
 try:
