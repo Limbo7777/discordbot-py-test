@@ -27,6 +27,10 @@ async def on_message(message):
         
     if message.content.startswith(f'{PREFIX}ping'):
         await message.channel.send('pong!')
+        
+    if message.content.startswith(f'{PREFIX}도박'):
+        await message.channel.send(str(random.randrange(1,1000000)))
+
 
 
 try:
